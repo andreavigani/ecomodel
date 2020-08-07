@@ -1,0 +1,40 @@
+{
+  "name": "ecomodel.com",
+  "version": "1.0.0",
+  "description": "Ecomodel",
+  "author": "Andrea Vigani",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "nuxt": "^2.14.1",
+    "nuxt-lazy-load": "^1.2.4",
+    "swiper": "^6.1.1",
+    "vue-scroll-reveal": "^1.0.11"
+  },
+  "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.1.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "lqip-loader": "^2.2.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "responsive-loader": "^2.0.0",
+    "sass-loader": "^9.0.3",
+    "sharp": "^0.25.4",
+    "sqip-loader": "^1.0.0",
+    "webp-loader": "^0.6.0"
+  }
+}

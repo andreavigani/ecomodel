@@ -1,0 +1,7 @@
+# Redirect default Netlify subdomain to primary domain
+https://ecomodel.netlify.app/* https://www.ecomodel.com/:splat 301!
+http://ecomodel.netlify.app/* https://www.ecomodel.com/:splat 301!
+
+http://ecomodel.com/* https://www.ecomodel.com/:splat splat 301!
+https://ecomodel.com/* https://www.ecomodel.com/:splat splat 301!
+http://www.ecomodel.com/* https://www.ecomodel.com/:splat splat 301!
