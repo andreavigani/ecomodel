@@ -41,7 +41,7 @@ export default {
       { hid: 'robots', name: 'robots', content: 'index, follow' }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Recursive:300,400,500,600,700,800&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900&display=swap' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
@@ -67,7 +67,9 @@ export default {
   plugins: [{
     src: '~/plugins/vue-scroll-reveal.js',
     ssr: false
-  }
+  },
+  '~/plugins/vue-formulate',
+  '~plugins/vue-gallery.client.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -79,6 +81,7 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
+    ['vue-scrollto/nuxt', { duration: 500, easing: 'ease-out' }]
     // '@nuxtjs/dotenv',
     // ['nuxt-lazy-load', { directiveOnly: true }]
   ],

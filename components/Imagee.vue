@@ -1,11 +1,11 @@
 <template>
   <picture>
-    <img class="img-fluid" :class="additionalclass" :src="image" :alt="imageAlt || 'Ecomodel'" />
+    <img class="img-fluid" :class="additionalClass" :src="image" :alt="imageAlt || 'Ecomodel'" />
   </picture>
 </template>
 <script>
 export default {
   name: 'Imagee',
-  props: ['image', 'imageAlt', 'additionalclass']
+  props: ['image', 'imageAlt', 'additionalClass']
 }
 </script>

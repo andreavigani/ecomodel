@@ -1,10 +1,11 @@
 <template lang="pug">
-  section.faq
-    h2 FAQ: domande e risposte
-    .faq__list
-      .faq__list__item(v-for="(faq, index) in faqs" :key="index")
-        h4 {{ faq.q }}
-        p {{ faq.a }}
+  section#faq.faq.bg-light
+    .container
+      h2 FAQ: domande e risposte
+      .faq__list
+        .faq__list__item(v-for="(faq, index) in faqs" :key="index")
+          h5 {{ faq.q }}
+          p {{ faq.a }}
 </template>
 <script>
 export default {
@@ -68,7 +69,7 @@ a: 'Si possono essere quantificate tutte le informazioni immesse nel modello, ta
 .faq__list {
   &__item {
     padding: 1.5rem 0;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid rgba($black, .25);
     p {
       margin: 0;
     }

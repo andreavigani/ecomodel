@@ -1,4 +1,4 @@
-$font-primary: 'Recursive', sans-serif;
+$font-primary: 'Inter', sans-serif;
 
 body {
   text-rendering: optimizeLegibility;
@@ -8,18 +8,53 @@ body {
 html {
   scroll-behavior: smooth;
 }
-.bg-light {
+.bg {
+  &-light {
   background-color: $gray-light;
+  }
+  &-primary {
+  background-color: $primary!important;
+  color: $white;
+  }
+  &-secondary {
+  background-color: $secondary!important;
+  color: $white;
+  }
+  &-black {
+  background-color: $black;
+  color: $white;
+  }
+  &-gradient {
+    background: $primary;
+    background: linear-gradient(90deg, $primary 0%, $primary 43%, $secondary 83%);
+    color: $white;
+  }
+}
+.text-white-important {
+  color: $white!important;
 }
 section {
   padding: 3rem 1rem;
   position: relative;
   @media only screen and (min-width:$md){
-    padding: 3rem 1.5rem;
+    padding: 4rem 1.5rem;
   }
   @media only screen and (min-width:$lg){
-    padding: 3rem 2rem;
+    padding: 6rem 2rem;
   }
+}
+
+strong {
+  color: $primary;
+}
+a {
+  &:hover {
+    text-decoration: none;
+    color: $secondary;
+    * {
+    color: $secondary;
+  }
+}
 }
 // h2 {
 //   text-transform: uppercase;
@@ -36,6 +71,7 @@ section {
 //   }
 // }
 h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
   span {
     color: $primary;
   }
@@ -47,26 +83,36 @@ p {
   }
 }
 
+ul {
+  padding-left: 1rem;
+  li {
+    margin: .75rem 0;
+  }
+}
+
 .btn {
   text-transform: uppercase;
-  border: 1px solid $black;
-  border-radius: 2rem;
-  font-size: .8rem;
-  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 0;
   padding: 1rem 2rem;
-  transition: all .4s;
-  &:hover {
-    border-radius: 1rem;
-    background-color: $black;
-    color: $primary;
+  min-width: 200px;
+  outline: none;
+  box-shadow: none!important;
+  &-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+    &:hover, &:focus {
+      background-color: $secondary;
+      border-color: $secondary;
+    }
   }
-  &--alt {
-    color: $gray-light;
-    border-color: $gray-light;
+  &-outline-primary {
+    border-color: $primary;
+    color: $primary;
     &:hover {
       background-color: $primary;
       border-color: $primary;
-      color: $black;
     }
   }
 }

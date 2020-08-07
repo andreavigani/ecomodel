@@ -63,10 +63,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background: $black!important;
-}
+<style lang="scss" scoped>
 .image__gallery {
   max-height: 60vh;
   .swiper-slide {

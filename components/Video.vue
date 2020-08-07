@@ -1,7 +1,7 @@
 <template lang="pug">
   .video__container
     .video_wrapper
-      iframe(width='1080' height='720' :src='url' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+      iframe(width='1280' height='720' :src='`${url}?showinfo=0&controls=2&modestbranding=1&rel=0}`' frameborder='0' allow='autoplay; encrypted-media; picture-in-picture' allowfullscreen)
 </template>
 <script>
 export default {
@@ -11,16 +11,15 @@ export default {
 </script>
 <style lang="scss" scoped>
 .video__container {
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 .video_wrapper {
   width: 100%;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56%; /* 16:9 */
   height: 0;
   background-color: $black;
-  border: 1rem solid $primary;
   z-index: 1;
 }
 .video_wrapper iframe {
