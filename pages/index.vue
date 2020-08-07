@@ -15,7 +15,7 @@
       .tilt-bottom
         svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none')
           path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
-    section#about(v-scroll-reveal)
+    section#about.bg-light(v-scroll-reveal)
       .row.align-items-center
         .col-12.col-lg-6.offset-lg-1
           h2.mb-4
@@ -39,9 +39,9 @@
             li Ecomodel utilizza Bimx come visualizzatore del modello.
         .col-12.col-lg-5
           Imagee(image="/img/ecomodel_logo.png" image-alt="About Ecomodel" additional-class="img-fluid d-block mx-auto fadeIn")
-    section.text-center(v-scroll-reveal)
-      h2 Modelli utilizzabili
-      p.mb-4.pb-4 Alcuni esempi di modelli su cui si può usare Ecomodel.
+    section.text-center
+      h2(v-scroll-reveal) Modelli utilizzabili
+      p.mb-4.pb-4(v-scroll-reveal) Alcuni esempi di modelli su cui si può usare Ecomodel.
       LightboxGallery(:images="['/img/gallery/modello_ecomodel-1.jpg','/img/gallery/modello_ecomodel-2.jpg', '/img/gallery/modello_ecomodel-3.jpg','/img/gallery/modello_ecomodel-4.jpg']")
     section.bg-black.text-center(v-scroll-reveal)
       h2 Realizzazioni
