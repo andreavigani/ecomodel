@@ -24,12 +24,12 @@ export default {
 }
 @media only screen and (min-width:$lg){
   .col {
-    &:nth-child(2) {
-      margin-top: 200px;
-    }
-    &:nth-child(3) {
-      margin-top: -200px;
-    }
+    // &:nth-child(2) {
+    //   margin-top: 200px;
+    // }
+    // &:nth-child(3) {
+    //   margin-top: -200px;
+    // }
     .image {
       transition: all .4s;
       &:hover {
