@@ -1,8 +1,6 @@
 <template lang="pug">
   FormulateForm(@submit="handleSubmit" v-model="formData" id="contact-form" name="contact-form" method="post" netlify data-netlify-honeypot="bot-field")
     FormulateInput(type="hidden" name="form-name")
-    FormulateInput(type="hidden" name="type")
-    FormulateInput(type="hidden" name="rif")
     FormulateInput(type="text" name="nome" placeholder="Nome" validation="required")
     FormulateInput(type="text" name="azienda" placeholder="Azienda")
     FormulateInput(type="email" name="email" placeholder="Email" validation="required|email")
@@ -20,9 +18,9 @@
     FormulateInput(type="checkbox" name="condizioni" wrapper-class="d-flex" element-class="form-check" input-class="form-check-input mr-2" label="Accetto il trattamento dei dati personali." validation="accepted")
     FormulateInput(type="submit" name="Invia richiesta" :disabled="isSubmitting" input-class="btn mt-2 btn-primary btn-block text-white-important")
     .notifications.mt-4
-      .notification.is-success(v-if="isSubmitted") Grazie per averci contattato! Ti risponderemo il prima possibile.
-      .notification.is-danger(v-if="isNotSubmitted")
-        span Si è verificato un errore. Riprova.
+      .alert.alert-success(v-if="isSubmitted") Grazie per averci contattato! Ti risponderemo il prima possibile.
+      .alert.alert-danger(v-if="isNotSubmitted")
+        span Si è verificato un errore. Controllas il form e riprova.
         br
         span
           | Altrimenti, chiamaci allo
@@ -58,7 +56,9 @@ export default {
       })
         .then(() => {
           this.isSubmitted = true
-          // reset form
+          this.formData = {
+            'form-name': 'contact-form'
+          }
         })
         .catch(() => { this.isNotSubmitted = true })
       this.isSubmitting = false
