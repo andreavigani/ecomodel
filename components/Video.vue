@@ -1,12 +1,22 @@
 <template lang="pug">
   .video__container
     .video_wrapper
-      iframe(width='1280' height='720' :src='`${url}?showinfo=0&controls=2&modestbranding=1&rel=0}`' frameborder='0' allow='autoplay; encrypted-media; picture-in-picture' allowfullscreen)
+      iframe(ref="videoIframe" width='1280' height='720' :src='`${url}?showinfo=0&controls=2&modestbranding=1&rel=0}`' frameborder='0' allow='autoplay; encrypted-media; picture-in-picture' allowfullscreen)
 </template>
 <script>
 export default {
   name: 'Video',
-  props: ['url']
+  props: ['url'],
+  data() {
+    return {
+      stop: false
+    }
+  },
+  methods: {
+    stopVideo(){
+      this.$refs.videoIframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>

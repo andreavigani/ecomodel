@@ -2,7 +2,7 @@
   #videoslider.swiper-container
     .swiper-wrapper
       .swiper-slide(v-for='(video, index) in videos' :key='index')
-        Video(:url="video")  
+        Video(:url="video" ref="videoRef")  
     .swiper-button-prev.swiper-button-white#videoslider-prev(v-if="videos.length > 1")
     .swiper-button-next.swiper-button-white#videoslider-next(v-if="videos.length > 1")
     .swiper-pagination#videoslider-pagination(v-if="videos.length > 1")
@@ -23,6 +23,7 @@ export default {
     Video
   },
   mounted() {
+    const _self = this
     if (this.videos.length > 1) {
       const swiperOptions = {
         loop: true,
@@ -41,6 +42,11 @@ export default {
         keyboard: {
           enabled: true,
           onlyInViewport: false
+        },
+        on: {
+          slideChange: function (el) {
+            // _self.$refs.videoRef[0].stopVideo()
+          },
         }
       }
       const el = document.getElementById('videoslider')
