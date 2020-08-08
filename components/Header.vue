@@ -1,5 +1,5 @@
 <template lang="pug">
-header
+header.d-none.d-lg-block
   .container-fluid
     nav.navbar.navbar-expand-lg.navbar-light
       nuxt-link.navbar-brand(to='/')

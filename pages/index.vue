@@ -3,6 +3,8 @@
     section.hero#hero
       .hero__bg.fadeIn
       .hero__content.text-center
+        div.d-lg-none.mx-auto.mb-4(style="max-width: 80px;")
+          Imagee(image="/img/ecomodel_logo.png" image-alt="About Ecomodel" additional-class="img-fluid d-block fadeIn")
         h1.hero__title Ecomodel
         p.hero__subtitle La rivoluzione nel modo di gestire gli immobili.
         a.btn.btn-primary.mt-4(href='#' v-scroll-to="'#video'") Guarda come funziona
@@ -40,6 +42,9 @@
         .col-12.col-lg-5
           Imagee(image="/img/ecomodel_logo.png" image-alt="About Ecomodel" additional-class="img-fluid d-block mx-auto fadeIn")
     section.text-center
+      .tilt-top2
+        svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none')
+          path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
       h2(v-scroll-reveal) Modelli utilizzabili
       p.mb-4.pb-4(v-scroll-reveal) Alcuni esempi di modelli su cui si può usare Ecomodel.
       LightboxGallery(:images="['/img/gallery/modello_ecomodel-1.jpg','/img/gallery/modello_ecomodel-2.jpg', '/img/gallery/modello_ecomodel-3.jpg','/img/gallery/modello_ecomodel-4.jpg']")
@@ -285,5 +290,24 @@ export default {
     fill: #262626;
 }
 
+.tilt-top2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.tilt-top2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 45px;
+    transform: rotateY(180deg);
+}
+
+.tilt-top2 .shape-fill {
+    fill: #F8F9FA;
+}
 </style>
