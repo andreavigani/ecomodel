@@ -52,7 +52,10 @@ export default {
 <style lang="scss">
 .swiper-container {
   padding-bottom: 4rem!important;
-  margin-bottom: -4rem!important;
+  margin-bottom: -2rem!important;
+  @media only screen and (min-width:$md){
+    margin-bottom: -4rem!important;
+  }
 }
 .swiper-pagination {
   bottom: 0;

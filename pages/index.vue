@@ -28,7 +28,7 @@
     section.bg-black.text-center#projects(v-scroll-reveal)
       h2 Realizzazioni
       p.mb-4.pb-4 I nostri progetti realizzati con Ecomodel.
-      VideoSlider(:videos="['https://www.youtube.com/embed/OP39r4pbF6U']")
+      VideoSlider(:videos="['https://www.youtube.com/embed/OP39r4pbF6U','https://www.youtube.com/embed/q5xkDgldHjg']")
     Pricing
     section.blockquote.bg-primary(v-scroll-reveal)
       .container
