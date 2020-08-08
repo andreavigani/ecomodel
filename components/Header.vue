@@ -13,6 +13,8 @@ header
           li.nav-item
             a.nav-link(href='#' v-scroll-to="'#about'") Caratteristiche
           li.nav-item
+            a.nav-link(href='#' v-scroll-to="'#projects'") Realizzazioni
+          li.nav-item
             a.nav-link(href='#' v-scroll-to="'#pricing'") Prezzi
           li.nav-item
             a.nav-link(href='#' v-scroll-to="'#faq'") FAQ
@@ -36,10 +38,16 @@ export default {
   .nav-item {
     padding-left: 1rem;
     padding-right: 1rem;
+    &.active {
+      .nav-link {
+        color: $primary;
+      }
+    }
   }
   .nav-link {
     font-size: 1.1rem;
     font-weight: 700;
+    color: $black;
     &:hover {
       color: $primary;
     }

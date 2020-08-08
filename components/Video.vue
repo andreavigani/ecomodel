@@ -11,7 +11,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .video__container {
-  max-width: 1080px;
+  max-width: calc(100% - 1.5rem);
+  @media only screen and (min-width:$lg){
+    max-width: 1080px;
+  }
   margin: 0 auto;
 }
 .video_wrapper {

@@ -43,7 +43,7 @@
       h2(v-scroll-reveal) Modelli utilizzabili
       p.mb-4.pb-4(v-scroll-reveal) Alcuni esempi di modelli su cui si può usare Ecomodel.
       LightboxGallery(:images="['/img/gallery/modello_ecomodel-1.jpg','/img/gallery/modello_ecomodel-2.jpg', '/img/gallery/modello_ecomodel-3.jpg','/img/gallery/modello_ecomodel-4.jpg']")
-    section.bg-black.text-center(v-scroll-reveal)
+    section.bg-black.text-center#projects(v-scroll-reveal)
       h2 Realizzazioni
       p.mb-4.pb-4 I nostri progetti realizzati con Ecomodel.
       VideoSlider(:videos="['https://www.youtube.com/embed/OP39r4pbF6U','https://www.youtube.com/embed/OP39r4pbF6U', 'https://www.youtube.com/embed/OP39r4pbF6U']")
@@ -262,7 +262,7 @@ export default {
 }
 
 .tilt-bottom .shape-fill {
-    fill: #FFFFFF;
+    fill: #f8f9fa;
 }
 
 .tilt-top {

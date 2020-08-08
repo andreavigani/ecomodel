@@ -35,8 +35,8 @@ export default {
           nextEl: '#videoslider-next',
           prevEl: '#videoslider-prev'
         },
-        effect: 'slide',
-        speed: 500,
+        effect: 'cube',
+        speed: 1000,
         autoplay: false,
         keyboard: {
           enabled: true,
@@ -50,4 +50,20 @@ export default {
 }
 </script>
 <style lang="scss">
+.swiper-container {
+  padding-bottom: 4rem;
+  margin-bottom: -4rem;
+}
+.swiper-pagination {
+  bottom: 0;
+  &-bullet {
+    width: 16px;
+    height: 16px;
+    margin: 0 10px!important;
+    background-color: $white;
+    &-active {
+      background-color: $white;
+    }
+  }
+}
 </style>
