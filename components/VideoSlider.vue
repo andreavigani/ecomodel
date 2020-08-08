@@ -51,18 +51,18 @@ export default {
 </script>
 <style lang="scss">
 .swiper-container {
-  padding-bottom: 4rem;
-  margin-bottom: -4rem;
+  padding-bottom: 4rem!important;
+  margin-bottom: -4rem!important;
 }
 .swiper-pagination {
   bottom: 0;
   &-bullet {
-    width: 16px;
-    height: 16px;
+    width: 16px!important;
+    height: 16px!important;
     margin: 0 10px!important;
-    background-color: $white;
+    background-color: $white!important;
     &-active {
-      background-color: $white;
+      background-color: $white!important;
     }
   }
 }
