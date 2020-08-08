@@ -100,7 +100,7 @@ ul {
     background-color: $primary;
     border-color: $primary;
     color: $white;
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       background-color: $secondary;
       border-color: $secondary;
     }

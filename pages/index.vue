@@ -6,7 +6,7 @@
         div.d-lg-none.mx-auto.mb-4(style="max-width: 80px;")
           Imagee(image="/img/ecomodel_logo.png" image-alt="About Ecomodel" additional-class="img-fluid d-block fadeIn")
         h1.hero__title Ecomodel
-        p.hero__subtitle La rivoluzione nel modo di gestire gli immobili.
+        p.hero__subtitle.pb-4 La rivoluzione nel modo di gestire gli immobili.
         a.btn.btn-primary.mt-4(href='#' v-scroll-to="'#video'") Guarda come funziona
     section.video#video.bg-gradient.text-center
       .tilt-top
@@ -27,19 +27,45 @@
             strong Ecomodel 
             | è un servizio che ti permette di gestire le informazioni di tutte le tipologie di immobili.
           ul.about__list
-            li Ecomodel ti permette di non perdere tempo nella ricerca della informazioni e di non stampare carta.
-            li Il modello tridimensionale è accessibile da tutti i dispositivi mobili attraverso un applicazione scaricabile gratuitamente.
-            li Ecomodel è lo strumento ideale per gestire le informazioni per il superbonus 110%.
-            li Ecomodel ti permette di raccogliere e organizzare le informazioni su edifici già realizzati per meglio gestire gli interventi di manutenzione.
-            li I disegni tutti i documenti raccolti dalle varie figure professionali (progettisti, manutentori) potranno finalmente essere raccolti in unico file.
-            li Ecomodel può essere utilizzato anche in fase di progettazione perché tutte le soluzioni architettoniche diventano facilmente comprensibili e facilmente modificabili.
-            li Ecomodel elimina la carta perché tutte le informazioni potranno essere raccolte in un unico file e facilmente condivise.
-            li Con Ecomodel è possibile realizzare l’analisi energetica dell’edificio per determinare l’intervento di riqualificazione idoneo.
+            li Ecomodel ti permette di 
+              u non perdere tempo 
+              | nella ricerca della informazioni e di 
+              u non stampare carta.
+            li Il modello tridimensionale è accessibile da 
+              u tutti i dispositivi mobili 
+              | attraverso un 
+              u applicazione scaricabile gratuitamente.
+            li Ecomodel è lo strumento ideale per gestire le informazioni per il 
+              u superbonus 110%.
+            li Ecomodel ti permette di raccogliere e organizzare le informazioni su edifici già realizzati per meglio 
+              u gestire gli interventi di manutenzione.
+            li I disegni e tutti i documenti raccolti dalle varie figure professionali (progettisti, manutentori) potranno finalmente essere raccolti in 
+              u unico file.
+            li Ecomodel può essere utilizzato anche in fase di progettazione perché tutte le 
+              u soluzioni architettoniche diventano facilmente comprensibili e facilmente modificabili.
+            li Ecomodel 
+              u elimina la carta 
+              | perché tutte le informazioni potranno essere raccolte in un unico file e facilmente condivise.
+            li Con Ecomodel è possibile realizzare l’
+             u analisi energetica dell’edificio 
+             | per determinare l’intervento di riqualificazione idoneo.
             li Con Ecomodel si rivoluziona il modo di gestire gli immobili.
-            li Ecomodel è pensato per gestire tutte le tipologie di immobili siano essi commerciali, residenziali o industriali.
-            li Con il modello tridimensionale si possono realizzare render dinamici per ogni soluzione progettuale.
-            li Ecomodel utilizza Bimx come visualizzatore del modello.
-            li Ecomodel è stato pensato anche per la realtà aumentata con un semplice Cardboard potrete navigare all’interno del progetto.
+            li Ecomodel è pensato per gestire 
+              u tutte le tipologie di immobili 
+              | siano essi 
+              u commerciali, residenziali o industriali.
+            li Con il 
+              u modello tridimensionale 
+              | si possono realizzare 
+              u render dinamici 
+              | per ogni soluzione progettuale.
+            li Ecomodel utilizza 
+              u Bimx 
+              | come visualizzatore del modello.
+            li Ecomodel è stato pensato anche per la 
+              u realtà aumentata 
+              | con un semplice Cardboard potrete 
+              u navigare all’interno del progetto.
         .col-12.col-lg-5
           Imagee(image="/img/ecomodel_logo.png" image-alt="About Ecomodel" additional-class="img-fluid d-block mx-auto fadeIn")
     section.text-center
@@ -152,20 +178,9 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: .2;
     z-index: 0;
-    filter: grayscale(1) opacity(0.2) brightness(0.3);
-  }
-  .scroll-down {
-    z-index: 2;
-    margin-top: 4rem;
-    a {
-    color: $white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: .7rem;
-    text-decoration: none;
-    }
+    filter: invert(1) grayscale(1) opacity(.25);
+    // filter: grayscale(1) opacity(.5) brightness(0.4);
   }
 }
 .about {
@@ -192,6 +207,14 @@ export default {
         left: 0;
         top: .25rem;
         border-radius: 100%;
+      }
+      u {
+        // color: $primary;
+        font-weight: 700;
+        text-decoration: none;
+        &:hover {
+          color: $primary;
+        }
       }
     }
   }
@@ -301,7 +324,7 @@ export default {
 }
 
 .tilt-top .shape-fill {
-    fill: #262626;
+    fill: #171717;
 }
 
 .tilt-top2 {

@@ -69,7 +69,7 @@ export default {
 
 <style lang="scss">
 .form-control {
-  border: 2px solid $primary;
+  border: 2px solid $primary!important;
   border: 1;
   box-shadow: none;
   letter-spacing: 1px;
@@ -78,7 +78,7 @@ export default {
   padding: .5rem .75rem;
   color: $black!important;
   &:focus {
-    border-color: $secondary;
+    border-color: $secondary!important;
   }
 }
 ul {
