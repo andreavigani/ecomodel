@@ -5,7 +5,7 @@
       .hero__content.text-center
         div.d-lg-none.mx-auto.mb-4(style="max-width: 80px;")
           img.img-fluid.d-block.fadeIn(src="/img/ecomodel_logo.png" alt="Ecomodel")
-        h1.hero__title Ecomodel
+        h1.hero__title ecomodel
         p.hero__subtitle.pb-4 La rivoluzione nel modo di gestire gli immobili.
         a.btn.btn-primary.mt-4(href='#' v-scroll-to="'#video'") Guarda come funziona
     section.video#video.bg-gradient.text-center
@@ -87,7 +87,13 @@ export default {
     z-index: 1;
   }
   &__title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    @media only screen and (min-width:$md){
+      font-size: 3rem;
+    }
+    @media only screen and (min-width:$lg){
+      font-size: 3.5rem;
+    }
   }
   &__subtitle {
     font-size: 1.25rem;
