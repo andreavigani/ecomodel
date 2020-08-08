@@ -27,18 +27,19 @@
             strong Ecomodel 
             | è un servizio che ti permette di gestire le informazioni di tutte le tipologie di immobili.
           ul.about__list
-            li
-              span Ecomodel ti permette di non perdere tempo nella ricerca della informazioni e di non stampare carta.
-              span Il modello tridimensionale sarà accessibile da tutti i dispositivi mobili attraverso un applicazione scaricabile gratuitamente.
-              span Ecomodel elimina la carta perché tutte le informazioni potranno essere raccolte in un unico file e facilmente condivise.
-            li Ecomodel è lo strumento ideale per gestire le informazioni per il superbonus 110% Ecomodel ti permette di raccogliere e organizzare le informazioni degli edifci già realizzati per meglio gestire gli interventi di manutenzione.
-            li I disegni, i calcoli dei professionisti potranno finalmente essere raccolti in unico file.
-            li Ecomodel può essere utilizzato anche in fase di progettazione perché tutte le soluzioni architettoniche diventano facilmente comprensibili.
-            li Con ecomodel è possibile realizzare l’analisi energetica dell’edificio per determinare l’intervento di riqualificazione idoneo. 
-            li Ecomodel è pensato per gestire tutte le tipologie di immobili siano essi commerciali, residenziali o industriali. 
-            li Con il modello tridimensionale si possono realizzare render dinamici per ogni soluzione progettuale. 
-            li Ecomodel è stato pensato anche per la realtà aumentata con un semplice CardBoard potrete navigare all’interno del progetto. 
+            li Ecomodel ti permette di non perdere tempo nella ricerca della informazioni e di non stampare carta.
+            li Il modello tridimensionale è accessibile da tutti i dispositivi mobili attraverso un applicazione scaricabile gratuitamente.
+            li Ecomodel è lo strumento ideale per gestire le informazioni per il superbonus 110%.
+            li Ecomodel ti permette di raccogliere e organizzare le informazioni su edifici già realizzati per meglio gestire gli interventi di manutenzione.
+            li I disegni tutti i documenti raccolti dalle varie figure professionali (progettisti, manutentori) potranno finalmente essere raccolti in unico file.
+            li Ecomodel può essere utilizzato anche in fase di progettazione perché tutte le soluzioni architettoniche diventano facilmente comprensibili e facilmente modificabili.
+            li Ecomodel elimina la carta perché tutte le informazioni potranno essere raccolte in un unico file e facilmente condivise.
+            li Con Ecomodel è possibile realizzare l’analisi energetica dell’edificio per determinare l’intervento di riqualificazione idoneo.
+            li Con Ecomodel si rivoluziona il modo di gestire gli immobili.
+            li Ecomodel è pensato per gestire tutte le tipologie di immobili siano essi commerciali, residenziali o industriali.
+            li Con il modello tridimensionale si possono realizzare render dinamici per ogni soluzione progettuale.
             li Ecomodel utilizza Bimx come visualizzatore del modello.
+            li Ecomodel è stato pensato anche per la realtà aumentata con un semplice Cardboard potrete navigare all’interno del progetto.
         .col-12.col-lg-5
           Imagee(image="/img/ecomodel_logo.png" image-alt="About Ecomodel" additional-class="img-fluid d-block mx-auto fadeIn")
     section.text-center
@@ -79,7 +80,7 @@
               h4.prices__item__title Pacchetto Gold
               .prices__item__description Prevede un abbonamento annuale per l’aggiornamento del modello, tutti gli interventi per la gestione del modello sono compresi.
             div
-              .prices__item__price 1500€
+              .prices__item__price 1600€
               a.btn.btn-outline-primary.mb-4(href='#' v-scroll-to="'#contact'") Contattaci
     section.blockquote.bg-primary(v-scroll-reveal)
       .container
@@ -93,7 +94,7 @@
           .col-12.col-lg-6
             p Compila il form qui sotto per inviare la tua richiesta.
             ContactForm
-          .col-12.col-lg-6.border-left.text-center
+          .col-12.col-lg-6.text-center
             img.img-fluid.mb-4(src="/img/ecomodel_logo.png" style="max-width:200px;")
             .px-lg-4
               h5.mt-4 Oppure invia una email a 

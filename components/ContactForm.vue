@@ -22,7 +22,7 @@ div
     .alert.alert-success(v-if="isSubmitted") Grazie per averci contattato! Ti risponderemo il prima possibile.
     .btn.btn-outline-primary(v-if="isSubmitted" @click="isSubmitted = false") Nuova richiesta
     .alert.alert-danger(v-if="isNotSubmitted")
-      span Si è verificato un errore. Controllas il form e riprova.
+      span Si è verificato un errore. Controlla il form e riprova.
       br
       span
         | Altrimenti, chiamaci allo
@@ -76,6 +76,7 @@ export default {
   box-shadow: none!important;
   height: auto;
   padding: .5rem .75rem;
+  color: $black!important;
   &:focus {
     border-color: $secondary;
   }
