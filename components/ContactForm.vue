@@ -20,7 +20,7 @@
     FormulateInput(type="checkbox" name="condizioni" wrapper-class="d-flex" element-class="form-check" input-class="form-check-input mr-2" label="Accetto il trattamento dei dati personali." validation="accepted")
     FormulateInput(type="submit" name="Invia richiesta" :disabled="isSubmitting" input-class="btn mt-2 btn-primary btn-block text-white-important")
     .notifications.mt-4
-      .notification.is-success(v-if="isSubmitted") {{ strings.formSuccess }}
+      .notification.is-success(v-if="isSubmitted") Grazie per averci contattato! Ti risponderemo il prima possibile.
       .notification.is-danger(v-if="isNotSubmitted")
         span Si è verificato un errore. Riprova.
         br
