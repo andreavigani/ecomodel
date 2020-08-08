@@ -17,57 +17,7 @@
       .tilt-bottom
         svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none')
           path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
-    section#about.bg-light(v-scroll-reveal)
-      .row.align-items-center
-        .col-12.col-lg-6.offset-lg-1
-          h2.mb-4
-            | Caratteristiche 
-            span principali
-          h4.mb-4
-            strong Ecomodel 
-            | è un servizio che ti permette di gestire le informazioni di tutte le tipologie di immobili.
-          ul.about__list
-            li Ecomodel ti permette di 
-              u non perdere tempo 
-              | nella ricerca della informazioni e di 
-              u non stampare carta.
-            li Il modello tridimensionale è accessibile da 
-              u tutti i dispositivi mobili 
-              | attraverso un 
-              u applicazione scaricabile gratuitamente.
-            li Ecomodel è lo strumento ideale per gestire le informazioni per il 
-              u superbonus 110%.
-            li Ecomodel ti permette di raccogliere e organizzare le informazioni su edifici già realizzati per meglio 
-              u gestire gli interventi di manutenzione.
-            li I disegni e tutti i documenti raccolti dalle varie figure professionali (progettisti, manutentori) potranno finalmente essere raccolti in 
-              u unico file.
-            li Ecomodel può essere utilizzato anche in fase di progettazione perché tutte le 
-              u soluzioni architettoniche diventano facilmente comprensibili e facilmente modificabili.
-            li Ecomodel 
-              u elimina la carta 
-              | perché tutte le informazioni potranno essere raccolte in un unico file e facilmente condivise.
-            li Con Ecomodel è possibile realizzare l’
-             u analisi energetica dell’edificio 
-             | per determinare l’intervento di riqualificazione idoneo.
-            li Con Ecomodel si rivoluziona il modo di gestire gli immobili.
-            li Ecomodel è pensato per gestire 
-              u tutte le tipologie di immobili 
-              | siano essi 
-              u commerciali, residenziali o industriali.
-            li Con il 
-              u modello tridimensionale 
-              | si possono realizzare 
-              u render dinamici 
-              | per ogni soluzione progettuale.
-            li Ecomodel utilizza 
-              u Bimx 
-              | come visualizzatore del modello.
-            li Ecomodel è stato pensato anche per la 
-              u realtà aumentata 
-              | con un semplice Cardboard potrete 
-              u navigare all’interno del progetto.
-        .col-12.col-lg-5
-          Imagee(image="/img/ecomodel_logo.png" image-alt="About Ecomodel" additional-class="img-fluid d-block mx-auto fadeIn")
+    About
     section.text-center
       .tilt-top2
         svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none')
@@ -79,35 +29,7 @@
       h2 Realizzazioni
       p.mb-4.pb-4 I nostri progetti realizzati con Ecomodel.
       VideoSlider(:videos="['https://www.youtube.com/embed/OP39r4pbF6U']")
-    section#pricing.text-center(v-scroll-reveal)
-      .container
-        h2 Prezzi
-        p 
-          span Ecomodel offre diverse di soluzioni per la gestione dell’edificio.
-          span Il preventivo per la realizzazione del modello iniziale viene fatto su misura, perché dipende dalla tipologia dell’edificio e dalla quantità di informazioni che in esso vogliono essere gestite.
-          span Una volta realizzato il modello iniziale sono disponibili pacchetti personalizzati per la gestione degli immobili.
-        .prices
-          .prices__item
-            div
-              h4.prices__item__title Su richiesta
-              .prices__item__description Prevede un costo orario per l’aggiornamento del modello, verrà fatto un preventivo prima di iniziare il lavoro.
-            div
-              .prices__item__price 35€/h
-              a.prices__item__btn.btn.btn-outline-primary.mb-4(href='#' v-scroll-to="'#contact'") Contattaci
-          .prices__item
-            div
-              h4.prices__item__title Pacchetto Base
-              .prices__item__description Prevede un aggiornamento del modello mensile di 8 ore.
-            div
-              .prices__item__price 200€/mese
-              a.prices__item__btn.btn.btn-outline-primary.mb-4(href='#' v-scroll-to="'#contact'") Contattaci
-          .prices__item
-            div
-              h4.prices__item__title Pacchetto Gold
-              .prices__item__description Prevede un abbonamento annuale per l’aggiornamento del modello, tutti gli interventi per la gestione del modello sono compresi.
-            div
-              .prices__item__price 1600€
-              a.prices__item__btn.btn.btn-outline-primary.mb-4(href='#' v-scroll-to="'#contact'") Contattaci
+    Pricing
     section.blockquote.bg-primary(v-scroll-reveal)
       .container
         p “Le idee migliori sono proprietà di tutti” 
@@ -136,14 +58,16 @@
 import Logo from '~/components/Logo.vue'
 import Links from '~/components/Links.vue'
 import Video from '~/components/Video.vue'
+import About from '~/components/About.vue'
 import Faq from '~/components/Faq.vue'
+import Pricing from '~/components/Pricing.vue'
 import Imagee from '~/components/Imagee.vue'
 import LightboxGallery from '~/components/LightboxGallery.vue'
 import VideoSlider from '~/components/VideoSlider.vue'
 import ContactForm from '~/components/ContactForm.vue'
 export default {
   components: {
-    Logo, Links, Imagee, VideoSlider, LightboxGallery, Video, Faq, ContactForm
+    Logo, Links, Imagee, VideoSlider, LightboxGallery, Video, About, Faq, Pricing, ContactForm
   }
 }
 </script>
@@ -183,89 +107,7 @@ export default {
     // filter: grayscale(1) opacity(.5) brightness(0.4);
   }
 }
-.about {
-  &__list {
-    list-style-type: none;
-    margin-top: 2rem;
-    li {
-      position: relative;
-      padding-left: 2rem;
-      margin-bottom: 1.5rem;
-      &:hover {
-        &:before {
-          background-color: $primary;
-        }
-      }
-      &:before {
-        transition: all .4s;
-        content: '';
-        width: 1.1rem;
-        height: 1.1rem;
-        border: 2px solid $primary;
-        display: block;
-        position: absolute;
-        left: 0;
-        top: .25rem;
-        border-radius: 100%;
-      }
-      u {
-        // color: $primary;
-        font-weight: 700;
-        text-decoration: none;
-        &:hover {
-          color: $primary;
-        }
-      }
-    }
-  }
-}
 
-.prices {
-  display: inline-grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr;
-  @media only screen and (min-width:$md){
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  margin-top: 1.5rem;
-  &__item {
-    border: 1px solid $primary;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all .5s;
-    &:hover {
-      transform: translateY(-10px);
-      border-color: $secondary;
-      .prices__item__title {
-        background-color: $secondary;
-      }
-      .prices__item__price {
-        color: $secondary;
-      }
-      .prices__item__btn {
-        border-color: $secondary;
-        color: $secondary;
-      }
-    }
-    &__title {
-      transition: all .5s;
-      background-color: $primary;
-      padding: 1.5rem 1rem;
-      color: $white;
-    }
-    &__description {
-      padding: 1.5rem 1rem;
-    }
-    &__price {
-      transition: all .5s;
-      color: $primary;
-      font-weight: 700;
-      font-size: 2rem;
-      padding: 1.5rem;
-    }
-  }
-}
 .blockquote {
   padding: 6rem 1rem;
   text-align: center;
