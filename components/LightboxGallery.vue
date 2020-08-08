@@ -1,10 +1,11 @@
 <template lang="pug">
-div
-  v-gallery(:images="images" :index="index" @close="index = null")
-  .row
-    .col.col-6(v-for="(url, imgIndex) in images" :key="imgIndex")
-      .image(@click="index = imgIndex")
-        img.img-fluid(:src="url")
+no-ssr
+  div
+    v-gallery(:images="images" :index="index" @close="index = null")
+    .row
+      .col.col-6(v-for="(url, imgIndex) in images" :key="imgIndex")
+        .image(@click="index = imgIndex")
+          img.img-fluid(:src="url")
 </template>
 <script>
 export default {

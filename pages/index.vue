@@ -8,12 +8,12 @@
         h1.hero__title Ecomodel
         p.hero__subtitle La rivoluzione nel modo di gestire gli immobili.
         a.btn.btn-primary.mt-4(href='#' v-scroll-to="'#video'") Guarda come funziona
-    section.video#video.bg-gradient.text-center(v-scroll-reveal)
+    section.video#video.bg-gradient.text-center
       .tilt-top
         svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none')
           path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
-      h2.mb-4 Cos'è Ecomodel
-      Video(url='https://www.youtube.com/embed/dWDyPOWB6VU')
+      h2.mb-4(v-scroll-reveal) Cos'è Ecomodel
+      Video(url='https://www.youtube.com/embed/dWDyPOWB6VU' v-scroll-reveal)
       .tilt-bottom
         svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none')
           path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
@@ -51,7 +51,7 @@
     section.bg-black.text-center#projects(v-scroll-reveal)
       h2 Realizzazioni
       p.mb-4.pb-4 I nostri progetti realizzati con Ecomodel.
-      VideoSlider(:videos="['https://www.youtube.com/embed/OP39r4pbF6U','https://www.youtube.com/embed/OP39r4pbF6U', 'https://www.youtube.com/embed/OP39r4pbF6U']")
+      VideoSlider(:videos="['https://www.youtube.com/embed/OP39r4pbF6U']")
     section#pricing.text-center(v-scroll-reveal)
       .container
         h2 Prezzi

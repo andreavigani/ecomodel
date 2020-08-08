@@ -1,5 +1,6 @@
 <template lang="pug">
-  FormulateForm(@submit="handleSubmit" v-model="formData" id="contact-form" name="contact-form" method="post" netlify data-netlify-honeypot="bot-field")
+div
+  FormulateForm(v-if="!isSubmitted" @submit="handleSubmit" v-model="formData" id="contact-form" name="contact-form" method="post" netlify data-netlify-honeypot="bot-field")
     FormulateInput(type="hidden" name="form-name")
     FormulateInput(type="text" name="nome" placeholder="Nome" validation="required")
     FormulateInput(type="text" name="azienda" placeholder="Azienda")
@@ -17,15 +18,16 @@
     //-       a(target="_blank" class="ml-1" href="/privacy-policy") Privacy Policy
     FormulateInput(type="checkbox" name="condizioni" wrapper-class="d-flex" element-class="form-check" input-class="form-check-input mr-2" label="Accetto il trattamento dei dati personali." validation="accepted")
     FormulateInput(type="submit" name="Invia richiesta" :disabled="isSubmitting" input-class="btn mt-2 btn-primary btn-block text-white-important")
-    .notifications.mt-4
-      .alert.alert-success(v-if="isSubmitted") Grazie per averci contattato! Ti risponderemo il prima possibile.
-      .alert.alert-danger(v-if="isNotSubmitted")
-        span Si è verificato un errore. Controllas il form e riprova.
-        br
-        span
-          | Altrimenti, chiamaci allo
-          a.ml-1(href="tel:+39043428234") 0434 28234
-          | Grazie.
+  .notifications.mt-4
+    .alert.alert-success(v-if="isSubmitted") Grazie per averci contattato! Ti risponderemo il prima possibile.
+    .btn.btn-outline-primary(v-if="isSubmitted" @click="isSubmitted = false") Nuova richiesta
+    .alert.alert-danger(v-if="isNotSubmitted")
+      span Si è verificato un errore. Controllas il form e riprova.
+      br
+      span
+        | Altrimenti, chiamaci allo
+        a.ml-1(href="tel:+39043428234") 0434 28234
+        | Grazie.
 </template>
 <script>
 export default {
@@ -56,9 +58,7 @@ export default {
       })
         .then(() => {
           this.isSubmitted = true
-          this.formData = {
-            'form-name': 'contact-form'
-          }
+          this.formData = { 'form-name': 'contact-form' }
         })
         .catch(() => { this.isNotSubmitted = true })
       this.isSubmitting = false

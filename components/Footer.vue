@@ -16,12 +16,8 @@ footer
   a.credits(rel='noopener' href='https://www.linkedin.com/in/andrea-vigani/' target='_blank') Credits
 </template>
 <script>
-import Links from '~/components/Links.vue'
 export default {
-  name: 'Footer',
-  components: {
-    Links
-  }
+  name: 'Footer'
 }
 </script>
 <style lang="scss" scoped>

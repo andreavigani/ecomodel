@@ -81,7 +81,7 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    ['vue-scrollto/nuxt', { duration: 500, easing: 'ease-out' }]
+    ['vue-scrollto/nuxt', { duration: 400 }]
     // '@nuxtjs/dotenv',
     // ['nuxt-lazy-load', { directiveOnly: true }]
   ],
