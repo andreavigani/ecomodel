@@ -95,6 +95,7 @@ ul {
   min-width: 200px;
   outline: none;
   box-shadow: none!important;
+  transition: all .4s;
   &-primary {
     background-color: $primary;
     border-color: $primary;
@@ -108,8 +109,9 @@ ul {
     border-color: $primary;
     color: $primary;
     &:hover {
-      background-color: $primary;
-      border-color: $primary;
+      background-color: $secondary;
+      border-color: $secondary;
+      color: $white!important;
     }
   }
 }
