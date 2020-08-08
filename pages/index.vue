@@ -4,7 +4,7 @@
       .hero__bg.fadeIn
       .hero__content.text-center
         div.d-lg-none.mx-auto.mb-4(style="max-width: 80px;")
-          Imagee(image="/img/ecomodel_logo.png" image-alt="About Ecomodel" additional-class="img-fluid d-block fadeIn")
+          img.img-fluid.d-block.fadeIn(src="/img/ecomodel_logo.png" alt="Ecomodel")
         h1.hero__title Ecomodel
         p.hero__subtitle.pb-4 La rivoluzione nel modo di gestire gli immobili.
         a.btn.btn-primary.mt-4(href='#' v-scroll-to="'#video'") Guarda come funziona

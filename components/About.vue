@@ -28,7 +28,7 @@
               u soluzioni architettoniche diventano facilmente comprensibili e facilmente modificabili.
         .col.col-12.col-lg-6
           Imagee(image="/img/screenshot-2.png" image-alt="About Ecomodel" additional-class="img-fluid d-block mx-auto fadeIn")
-      .py-4
+      .py-2.py-lg-4
       .row.align-items-center
         .col.col-12.col-lg-6.order-1.order-lg-2
           ul.about__list
