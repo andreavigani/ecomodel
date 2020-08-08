@@ -8,25 +8,25 @@ export default {
     htmlAttrs: {
       lang: 'it-IT',
     },
-    title: 'Ecomodel',
+    title: 'Ecomodel | Servizio di gestione immobili',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Servizio di gestione immobili.' },
+      { hid: 'description', name: 'description', content: 'Ecomodel è un servizio che ti permette di gestire le informazioni di tutte le tipologie di immobili.' },
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'ecomodel'
+        content: 'ecomodel, vr, gestione, immobili, 3d, modelli 3d, cardboard, bmix'
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Ecomodel'
+        content: 'Ecomodel | Servizio di gestione immobili'
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Servizio di gestione immobili.'
+        content: 'Ecomodel è un servizio che ti permette di gestire le informazioni di tutte le tipologie di immobili.'
       },
       {
         hid: 'og:image',
