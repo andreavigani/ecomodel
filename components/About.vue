@@ -86,6 +86,7 @@ export default {
     list-style-type: none;
     margin-top: 2rem;
     text-align: justify;
+    font-size: 1.1rem;
     li {
       position: relative;
       padding-left: 2rem;
