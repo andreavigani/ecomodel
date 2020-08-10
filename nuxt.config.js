@@ -31,7 +31,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://www.ecomodel.com/img/ecomodel_hero.jpg'
+        content: 'https://www.ecomodel.com/img/ecomodel_hero-2.jpg'
       },
       {
         hid: 'og:url',

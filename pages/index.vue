@@ -28,7 +28,7 @@
     section.bg-black.text-center#projects(v-scroll-reveal)
       h2 Realizzazioni
       p.mb-4.pb-4 I nostri progetti realizzati con Ecomodel.
-      VideoSlider(:videos="['https://www.youtube.com/embed/OP39r4pbF6U','https://www.youtube.com/embed/m9OkCp0uHOc','https://www.youtube.com/embed/2vPDPBwCoBk']")
+      VideoSlider(:videos="['https://www.youtube.com/embed/hgmWxhDoQ3w','https://www.youtube.com/embed/OP39r4pbF6U','https://www.youtube.com/embed/m9OkCp0uHOc','https://www.youtube.com/embed/2vPDPBwCoBk']")
     Pricing
     section.blockquote.bg-primary(v-scroll-reveal)
       .container
@@ -100,17 +100,19 @@ export default {
     margin: 1.5rem 0;
   }
   &__bg {
-    background-image: url(/img/ecomodel_hero.jpg);
+    background-image: url(/img/ecomodel_hero-1.jpg);
+    background-color: $black;
     background-size: cover;
-    background-position: top center;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 0;
-    filter: invert(1) grayscale(1) opacity(.25);
-    // filter: grayscale(1) opacity(.5) brightness(0.4);
+    // filter: invert(1) grayscale(1) opacity(.25);
+    filter: opacity(.5) brightness(0.4);
   }
 }
 
@@ -172,7 +174,7 @@ export default {
 }
 
 .tilt-top .shape-fill {
-    fill: #171717;
+    fill: #3D3D3D;
 }
 
 .tilt-top2 {

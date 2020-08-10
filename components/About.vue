@@ -48,13 +48,13 @@
               | si possono realizzare 
               u render dinamici 
               | per ogni soluzione progettuale.
-            li Ecomodel utilizza 
-              u Bimx 
-              | come visualizzatore del modello.
             li Ecomodel è stato pensato anche per la 
               u realtà aumentata 
               | con un semplice Cardboard potrete 
               u navigare all’interno del progetto.
+            li Ecomodel utilizza 
+              u Bimx 
+              | come visualizzatore del modello.
         .col.col-12.col-lg-6.order-2.order-lg-1
           Imagee(image="/img/screenshot-3.png" image-alt="About Ecomodel" additional-class="img-fluid d-block mx-auto fadeIn")
         .col.col-12.col-lg-1.order-3

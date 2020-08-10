@@ -6,7 +6,7 @@ div
     FormulateInput(type="text" name="azienda" placeholder="Azienda")
     FormulateInput(type="email" name="email" placeholder="Email" validation="required|email")
     FormulateInput(type="tel" name="telefono" placeholder="Telefono" validation="required|number")
-    FormulateInput(:options="{su_richiesta: 'Su richiesta', pacchetto_base: 'Pacchetto Base', pacchetto_gold: 'Pacchetto Gold'}"
+    FormulateInput(:options="{su_richiesta: 'Su richiesta', pacchetto_premium: 'Pacchetto Premium', pacchetto_gold: 'Pacchetto Gold'}"
       type="select"
       name="pacchetto"
       placeholder="Seleziona un pacchetto"
