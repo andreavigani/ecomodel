@@ -2,6 +2,7 @@
   div
     section.hero#hero
       .hero__bg.fadeIn
+      .hero__bg2.fadeIn
       .hero__content.text-center
         div.d-lg-none.mx-auto.mb-4(style="max-width: 80px;")
           img.img-fluid.d-block.fadeIn(src="/img/ecomodel_logo.png" alt="Ecomodel")
@@ -113,6 +114,21 @@ export default {
     z-index: 0;
     // filter: invert(1) grayscale(1) opacity(.25);
     filter: opacity(.5) brightness(0.4);
+  }
+  &__bg2 {
+    background-image: url(/img/ecomodel_hero-2.jpg);
+    background-color: $black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    animation-delay: 4s;
+    filter: opacity(.5) brightness(0.5);
   }
 }
 

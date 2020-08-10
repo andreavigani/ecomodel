@@ -2,7 +2,7 @@
   #videoslider.swiper-container
     .swiper-wrapper
       .swiper-slide(v-for='(video, index) in videos' :key='index')
-        Video(:url="video")  
+        Video(:url="video")
     .swiper-button-prev.swiper-button-white#videoslider-prev(v-if="videos.length > 1")
     .swiper-button-next.swiper-button-white#videoslider-next(v-if="videos.length > 1")
     .swiper-pagination#videoslider-pagination(v-if="videos.length > 1")
