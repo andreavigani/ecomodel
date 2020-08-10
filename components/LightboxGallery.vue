@@ -1,5 +1,5 @@
 <template lang="pug">
-no-ssr
+client-only
   div
     v-gallery(:images="images" :index="index" @close="index = null")
     .row
