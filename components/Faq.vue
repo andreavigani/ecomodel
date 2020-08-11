@@ -15,7 +15,7 @@ export default {
       faqs: [
         { 
           q: 'A chi è rivolto il servizio ecomodel?',
-          a: 'Il servizio Ecomdel è rivolto a tutti le persone che cercano una sistema evoluto e allo stesso tempo pratico di gestire tutte le tipologie di immobili.'
+          a: 'Il servizio Ecomodel è rivolto a tutte le persone che cercano una sistema evoluto e allo stesso tempo pratico di gestire tutte le tipologie di immobili.'
         },
         {
           q: 'In che modo è agevolato il lavoro del manutentore?',
@@ -23,7 +23,7 @@ export default {
         },
         { 
           q: 'Come posso utilizzare ecomodel per superbonus110%?',
-          a: 'Inserendo nel modello le caratteristiche dell’involucro e della caldaia posso realizzare un modello tridimensionale e verificare la possibilità di realizzare uno o più degli interventi previsti.'
+          a: 'Inserendo nel modello le caratteristiche dell’involucro e della caldaia è possibile realizzare un modello tridimensionale e verificare la possibilità di realizzare uno o più degli interventi previsti dal bonus.'
         },
         { q: 'Ecomodel mi fornisce l’APE?',
           a: 'Ecomodel non è un software per il calcolo dell’APE, ma il servizio (utilizzando altri software certificati) permette di ottenere gli attestati di prestazione energetica ante e post intervento. E’ possibile inoltre fare delle simulazioni in corso d’opera modificando i vari parametri dell’involucro o degli impianti.'
@@ -50,7 +50,7 @@ export default {
         },
         { 
           q: 'Possono essere esportare i file in dwg?',
-          a: 'Ecomodel riesce a esportare il file in pdf , ma il modello tridimensionale originale può essere esportato in pin, dwf, dxf, dwg, ifc, ifc xml e puo’ esportare file in xls.'
+          a: 'Ecomodel riesce ad esportare e condividere i vari documenti in formato jpg, ma il modello tridimensionale originale può essere esportato in pin, dwf, dxf, dwg, ifc, ifc xml e puo’ esportare file in xls.'
         },
         { 
           q: 'In che formato devo importare i file?',
@@ -58,11 +58,11 @@ export default {
         },
         { 
           q: 'Si possono inserire anche video?',
-          a: 'Si possono essere inseriti anche dei video, si dovrà ancora una volta valutare la maniera più efficiente di inserimento.'
+          a: 'Attraverso il modello originale possono essere realizzati render animati che possono illustrare le diverse soluzioni progettuali. I video sono caricati su canali video dedicati per non appesantire il modello.'
         },
         { 
           q: 'Quanto dura l’abbonamento?',
-          a: 'Ecomodel è un servizio con rinnovo annuale, almeno 2 settimane prima della scadenza dell’abbonamento il titolare del servizio dovrà comunica via pec l’intenzione di non avvalersi più dello stesso.'
+          a: 'Ecomodel è un servizio con rinnovo annuale, almeno 2 settimane prima della scadenza dell’abbonamento il titolare del servizio dovrà comunicare via pec l’intenzione di non avvalersi più dello stesso.'
         },
         { 
           q: 'Posso realizzare render animati?',
