@@ -49,7 +49,7 @@ export default {
           a: 'Si, possono essere importati ma non direttamente nel modello, i dati forniti dal progettista vengono rielaborati e tradotti per rendere il modello condivisibile e meglio gestibile.'
         },
         { 
-          q: 'Possono essere esportare i file in dwg?',
+          q: 'Possono essere esportati i file in dwg?',
           a: 'Ecomodel riesce ad esportare e condividere i vari documenti in formato jpg, ma il modello tridimensionale originale può essere esportato in pin, dwf, dxf, dwg, ifc, ifc xml e puo’ esportare file in xls.'
         },
         { 

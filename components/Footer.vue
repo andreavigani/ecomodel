@@ -11,7 +11,7 @@ footer
   |  - 
   span Via Cavallotti, 1 - 33170 Pordenone, Italia
   |  - 
-  a.text--black(href='#' target='_blank' rel='noopener' title='Privacy Policy ') Privacy Policy
+  a(href="https://www.iubenda.com/privacy-policy/23227623"  target="_blank" title="Privacy Policy") Privacy Policy
   |  - 
   a.credits(rel='noopener' href='https://www.linkedin.com/in/andrea-vigani/' target='_blank') Credits
 </template>
