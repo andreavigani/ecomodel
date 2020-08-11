@@ -1,7 +1,7 @@
 <template lang="pug">
   .video__container
     .video_wrapper
-      iframe(class="video-iframe" width='1280' height='720' :src='`${url}?showinfo=0&controls=2&modestbranding=1&rel=0}`' frameborder='0' allow='autoplay; encrypted-media; picture-in-picture' allowfullscreen)
+      iframe(class="video-iframe" width='1280' height='720' loading="lazy" :src='`${url}?showinfo=0&controls=2&modestbranding=1&rel=0}`' frameborder='0' allow='autoplay; encrypted-media; picture-in-picture' allowfullscreen)
 </template>
 <script>
 export default {
