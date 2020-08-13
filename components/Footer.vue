@@ -13,6 +13,8 @@ footer
   |  - 
   a(href="https://www.iubenda.com/privacy-policy/23227623"  target="_blank" title="Privacy Policy") Privacy Policy
   |  - 
+  a(href="https://www.iubenda.com/privacy-policy/23227623/cookie-policy"  target="_blank" title="Cookie Policy") Cookie Policy
+  |  - 
   a.credits(rel='noopener' href='https://www.linkedin.com/in/andrea-vigani/' target='_blank') Credits
 </template>
 <script>
