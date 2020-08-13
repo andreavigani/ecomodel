@@ -19,6 +19,7 @@
             h4.prices__item__title Pacchetto Premium
             .prices__item__description Prevede due giornate lavorative al mese in cui lo staff ecomodel si renderà disponibile per l'aggiornamento del modello.
           div
+            .prices__item__from A partire da
             .prices__item__price 200€
             a.prices__item__btn.btn.btn-outline-primary.mb-4(href='#' v-scroll-to="'#contact'") Contattaci
         .prices__item
@@ -26,6 +27,7 @@
             h4.prices__item__title Pacchetto Gold
             .prices__item__description Prevede un abbonamento annuale per l’aggiornamento del modello, tutti gli interventi per la gestione del modello sono compresi.
           div
+            .prices__item__from A partire da
             .prices__item__price 1600€
             a.prices__item__btn.btn.btn-outline-primary.mb-4(href='#' v-scroll-to="'#contact'") Contattaci
 </template>
@@ -58,7 +60,7 @@ export default {
       .prices__item__title {
         background-color: $secondary;
       }
-      .prices__item__price {
+      .prices__item__from, .prices__item__price {
         color: $secondary;
       }
       .prices__item__btn {
@@ -75,12 +77,20 @@ export default {
     &__description {
       padding: 1.5rem 1rem;
     }
+    &__from {
+      transition: all .5s;
+      text-transform: uppercase;
+      color: $primary;
+      padding-top: .75rem;
+      font-size: .8rem;
+      font-weight: 600;
+    }
     &__price {
       transition: all .5s;
       color: $primary;
       font-weight: 700;
       font-size: 2rem;
-      padding: 1.5rem;
+      padding: .5rem 1.5rem 1.5rem 1.5rem;
     }
   }
 }
