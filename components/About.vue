@@ -8,7 +8,7 @@
             span principali
           h4.mb-4
             strong Ecomodel 
-            | è un servizio che ti permette di gestire le informazioni di tutte le tipologie di immobili.
+            | è un servizio è un servizio di digitalizzazione degli edifici che ti permette di gestire le informazioni di tutte le tipologie di immobili.
           ul.about__list
             li Ecomodel ti permette di 
               u non perdere tempo 
